@@ -4,10 +4,15 @@ package com.example.coolweather.model;
  * Created by 杨胜 on 2016/3/27.
  */
 public class County {
+    public static final String TABLE_NAME = "County";
+    public static final String TABLE_COLUMN_ID = "id";
+    public static final String TABLE_COLUMN_COUNTY_NAME = "county_name";
+    public static final String TABLE_COLUMN_COUNTY_CODE = "county_code";
+    public static final String TABLE_COLUMN_CITY_ID = "city_id";
     private int id;
     private String countyName;
     private String countyCode;
-    private String cityId;
+    private int cityId;
 
     public int getId() {
         return id;
@@ -33,11 +38,11 @@ public class County {
         this.countyCode = countyCode;
     }
 
-    public String getCityId() {
+    public int getCityId() {
         return cityId;
     }
 
-    public void setCityId(String cityId) {
+    public void setCityId(int cityId) {
         this.cityId = cityId;
     }
 }
